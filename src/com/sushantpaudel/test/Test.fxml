@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sushantpaudel.test.TestController">
+    <ImageView fx:id="imageViewInput" fitHeight="225.0" fitWidth="285.0" layoutX="14.0" layoutY="14.0"
+               pickOnBounds="true" preserveRatio="true"/>
+    <ImageView fx:id="imageViewOutput" fitHeight="225.0" fitWidth="285.0" layoutX="307.0" layoutY="14.0"
+               pickOnBounds="true" preserveRatio="true"/>
+    <Button fx:id="btnAddImage" layoutX="14.0" layoutY="251.0" mnemonicParsing="false" prefHeight="28.0"
+            prefWidth="76.0" text="Add Image"/>
+    <Button fx:id="btnGrayScaleConversion" layoutX="15.0" layoutY="287.0" mnemonicParsing="false" prefHeight="25.0"
+            prefWidth="37.0" text="G"/>
+    <Button fx:id="btnNoiseReduction" layoutX="64.0" layoutY="287.0" mnemonicParsing="false" prefHeight="25.0"
+            prefWidth="37.0" text="N"/>
+    <Button fx:id="btnBackgroundElimination" layoutX="115.0" layoutY="287.0" mnemonicParsing="false" prefHeight="25.0"
+            prefWidth="37.0" text="B"/>
+    <Button fx:id="btnCrop" layoutX="164.0" layoutY="287.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="37.0"
+            text="C"/>
+    <Button fx:id="btnResizeImage" layoutX="212.0" layoutY="287.0" mnemonicParsing="false" prefHeight="25.0"
+            prefWidth="37.0" text="R"/>
+    <Button fx:id="btnPreProcessAllData" layoutX="261.0" layoutY="287.0" mnemonicParsing="false" prefHeight="25.0"
+            prefWidth="37.0" text="All"/>
+    <Button fx:id="btnReset" layoutX="15.0" layoutY="361.0" mnemonicParsing="false" text="Reset"/>
+    <Button fx:id="btnSaveImage" layoutX="75.0" layoutY="361.0" mnemonicParsing="false" text="Save"/>
+    <Button fx:id="btnTest" layoutX="133.0" layoutY="361.0" mnemonicParsing="false" text="Test"/>
+    <Button fx:id="btnCopy" layoutX="186.0" layoutY="361.0" mnemonicParsing="false" text="Copy"/>
+    <Label layoutX="307.0" layoutY="291.0" text="&lt;&lt; Pre-processing"/>
+    <Label layoutX="14.0" layoutY="329.0" text="Feature Extraction &gt;&gt;"/>
+    <Button fx:id="btnHarrisAlgorithm" layoutX="140.0" layoutY="324.0" mnemonicParsing="false" prefHeight="28.0"
+            prefWidth="52.0" text="Harris"/>
+    <Button fx:id="btnFeatureList" layoutX="204.0" layoutY="326.0" mnemonicParsing="false" text="FeatureList"/>
+    <Button fx:id="btnPredict" layoutX="477.0" layoutY="296.0" mnemonicParsing="false" text="Predict Sign"/>
+    <Label fx:id="labelPredictionOutput" alignment="CENTER" layoutX="450.0" layoutY="340.0" prefHeight="42.0"
+           prefWidth="135.0" text="Prediction: Here">
+        <font>
+            <Font name="Century Gothic" size="18.0"/>
+        </font>
+    </Label>
+</AnchorPane>
